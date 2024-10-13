@@ -29,7 +29,7 @@ Now that we have seen the moving parts, we can start leveling up and run this wi
 
 - Use Azure Blob Storage to store the data: See [lab 3](/labs/Lab%203%20-%20Upload%20the%20data%20into%20blob%20storage.md)
 - Use Azure Cognitive Services to create embeddings: See [lab 4](/labs/Lab%204%20-%20Create%20embeddings%20with%20Azure%20OpenAI.md)
-- Use Azure Machine Learning to run the inference
+- Use Azure Machine Learning to run the inference: See [lab 5](/labs/Lab%205%20-%20Query%20the%20Azure%20OpenAI%20model%20using%20Search.md)
 
 ### Running the scripts
 1. Look at the scripts for the documented parameters on the top
