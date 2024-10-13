@@ -2,14 +2,13 @@ import sys, requests, time, os, json
 from llama_index.llms.openai import OpenAI
 from llama_index.embeddings.openai import OpenAIEmbedding
 from llama_index.core import VectorStoreIndex, SimpleDirectoryReader
-from llama_index.core import Settings
 from llama_index.core.llms import ChatMessage
 from llama_index.core import StorageContext
 from llama_index.core.storage.docstore import SimpleDocumentStore
 from llama_index.core.storage.index_store import SimpleIndexStore
 from llama_index.core.vector_stores import SimpleVectorStore
 from llama_index.core import load_index_from_storage
-from utils import call_model_with_context, get_documents, setup, get_blogging_directory, get_index, log_duration, parse_blog_header_date, convert_filename_to_url, get_github_rate_limit
+from utils import call_model_with_context, get_documents, get_blogging_directory, get_index, log_duration, parse_blog_header_date, convert_filename_to_url, get_github_rate_limit, setup_local
 
 # Main script
 if __name__ == "__main__":
@@ -32,7 +31,7 @@ if __name__ == "__main__":
     run_with_documents = len(sys.argv) > 2
 
     # Set up the environment and initialize the models
-    setup()
+    setup_local()
 
     # Check the current rate limit of using GitHub Models
     start_remaining_tokens, start_remaining_requests = get_github_rate_limit()

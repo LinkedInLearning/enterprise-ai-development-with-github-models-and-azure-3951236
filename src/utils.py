@@ -1,4 +1,14 @@
 import os, time, dotenv, logging, sys, requests, subprocess
+from llama_index.llms.openai import OpenAI
+from llama_index.embeddings.openai import OpenAIEmbedding
+from llama_index.core import VectorStoreIndex, SimpleDirectoryReader
+from llama_index.core import Settings
+from llama_index.core.llms import ChatMessage
+from llama_index.core import StorageContext
+from llama_index.core.storage.docstore import SimpleDocumentStore
+from llama_index.core.storage.index_store import SimpleIndexStore
+from llama_index.core.vector_stores import SimpleVectorStore
+from llama_index.core import load_index_from_storage
 from openai import AzureOpenAI
 
 def setup_local():
@@ -35,8 +45,8 @@ def setup_local():
     logging.getLogger().addHandler(logging.StreamHandler(stream=sys.stdout))
 
     # Set up the LLM model configuration to use
-    llm = OpenAI(
-        model="gpt-4o-mini",
+    llm = OpenAI(   
+        model="gpt-4o-mini",     
         api_key=os.getenv("OPENAI_API_KEY"),
         api_base=os.getenv("OPENAI_BASE_URL"),
     )
@@ -313,7 +323,8 @@ def call_model_with_context(user_prompt, context, prompt_log_message, log_durati
     
     # Prepare the prompt messages with the context data
     messages = [
-        ChatMessage(role="system", content="You are a helpful assistant that answers some questions with the help of some context data.\n\nHere is the context data:\n\n" + context),
+        ChatMessage(role="system", content=("You are a helpful assistant that answers some questions with the help of some context data.\n\n"+
+                                            "Here is the context data:\n\n" + context)),
         ChatMessage(role="user", content=user_prompt)
     ]
 

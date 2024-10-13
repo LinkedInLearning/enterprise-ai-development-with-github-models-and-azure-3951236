@@ -1,9 +1,9 @@
 """
-    This script will call the Azure OpenAI model to generate the answer to a specific question based on the context of the that we uploaded to Azure AI Index.
+    This script will call the Azure OpenAI model to generate the answer to a specific question based on the context of the files that we uploaded to Azure AI Index.
 """
 
 import sys, time, json
-from utils import setup_azure_client, get_github_rate_limit
+from utils import setup_azure_client
 
 # Main script
 if __name__ == "__main__":
