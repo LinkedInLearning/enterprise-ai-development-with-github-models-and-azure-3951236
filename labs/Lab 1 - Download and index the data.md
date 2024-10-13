@@ -7,4 +7,4 @@
 1. Persists the embeddings in the `blog_index` folder to retrieve for the next run (if needed)
 1. After persisting, the size of the new folder is printed
 
-See the script [local-script.py](../local-script.py) for the implementation.
+See the script [local-script.py](../src/local-script.py) for the implementation.

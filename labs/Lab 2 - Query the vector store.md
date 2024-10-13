@@ -5,4 +5,4 @@
 1. The fragments and the user prompt are now send to the `gpt-4o-mini` model to generate a natural language response on the query, using the fragments found in the vector store
 1. The model response is printed
 
-See the script [local-script.py](../local-script.py) for the implementation.
+See the script [local-script.py](../src/local-script.py) for the implementation.
