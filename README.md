@@ -1,34 +1,42 @@
 # Enterprise AI Development with GitHub Models and Azure
 This is the repository for the LinkedIn Learning course Enterprise AI Development with GitHub Models and Azure. The full course is available from [LinkedIn Learning][lil-course-url].
 
-_See the readme file in the main branch for updated instructions and information._
-## Instructions
-This repository has branches for each of the videos in the course. You can use the branch pop up menu in github to switch to a specific branch and take a look at the course at that stage, or you can add `/tree/BRANCH_NAME` to the URL to go to the branch you want to access.
+## Getting started
+To get started with this repositor, open it using a GitHub Codespace. It has all the tools you need to start working with the data and GitHub Models.
 
-## Branches
-The branches are structured to correspond to the videos in the course. The naming convention is `CHAPTER#_MOVIE#`. As an example, the branch named `02_03` corresponds to the second chapter and the third video in that chapter. 
-Some branches will have a beginning and an end state. These are marked with the letters `b` for "beginning" and `e` for "end". The `b` branch contains the code as it is at the beginning of the movie. The `e` branch contains the code as it is at the end of the movie. The `main` branch holds the final state of the code when in the course.
+After opening the repository in a Codespace, you can run the following command to install the dependencies:
 
-When switching from one exercise files branch to the next after making changes to the files, you may get a message like this:
+```bash
+pip install -r requirements.txt
+```
 
-    error: Your local changes to the following files would be overwritten by checkout:        [files]
-    Please commit your changes or stash them before you switch branches.
-    Aborting
+## Running the script
+To run the script, you can use the following command:
 
-To resolve this issue:
-	
-    Add changes to git using this command: git add .
-	Commit changes using this command: git commit -m "some message"
+```bash
+python script.py
+```
 
-## Installing
-1. To use these exercise files, you must have the following installed:
-	- [list of requirements for course]
-2. Clone this repository into your local machine using the terminal (Mac), CMD (Windows), or a GUI tool like SourceTree.
-3. [Course-specific instructions]
+## Local process
+To run the embedding and inference steps on you local machine, start here. This will show you the basic moving parts.
+The script will execute the following steps:
 
+- Download and index the data: See [lab 1](/labs/Lab%201%20-%20Download%20and%20index%20the%20data.md)
+- Query the vector store: See [lab 2](/labs/Lab%202%20-%20Query%20the%20vector%20store.md)
 
-[0]: # (Replace these placeholder URLs with actual course URLs)
+## Using Azure Resources
+Now that we have seen the moving parts, we can start leveling up and run this with Azure resources.
 
-[lil-course-url]: https://www.linkedin.com/learning/
-[lil-thumbnail-url]: http://
+- Use Azure Blob Storage to store the data: See [lab 3](/labs/Lab%203%20-%20Upload%20the%20data%20into%20blob%20storage.md)
+- Use Azure Cognitive Services to create embeddings: See [lab 4](/labs/Lab%204%20-%20Create%20embeddings%20with%20Azure%20OpenAI.md)
+- Use Azure Machine Learning to run the inference
 
+### Running the scripts
+1. Look at the scripts for the documented parameters on the top
+1. Configure the necesary environment variables (also see `.env-example` that can be copied to `.env` and filled in)
+1. Run the download of the dependencies with `pip install -r requirements.txt`
+1. Run the scripts one by one with `python <script-name>.py`
+
+### Extra information
+All along the way, the most interesting durationss for each step is shown to give you an idea of the performance of the script.
+At the end of the script, the used API requests to GitHub Models are printed, together with the information about the used tokens, as this is all dependent on the [rate limit for GitHub Models](https://docs.github.com/en/github-models/prototyping-with-ai-models#rate-limits).

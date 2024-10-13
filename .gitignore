@@ -1,4 +1,5 @@
-.DS_Store
-node_modules
-.tmp
-npm-debug.log
+
+blog_index
+__pycache__/
+log1.txt
+.env
