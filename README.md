@@ -38,5 +38,5 @@ Now that we have seen the moving parts, we can start leveling up and run this wi
 1. Run the scripts one by one with `python <script-name>.py`
 
 ### Extra information
-All along the way, the most interesting durationss for each step is shown to give you an idea of the performance of the script.
+All along the way, the most interesting durations for each step is shown to give you an idea of the performance of the script.
 At the end of the script, the used API requests to GitHub Models are printed, together with the information about the used tokens, as this is all dependent on the [rate limit for GitHub Models](https://docs.github.com/en/github-models/prototyping-with-ai-models#rate-limits).
