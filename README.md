@@ -4,14 +4,14 @@ This is the repository for the LinkedIn Learning course Enterprise AI Developmen
 ## Getting started
 To get started with this repositor, open it using a GitHub Codespace. It has all the tools you need to start working with the data and GitHub Models.
 
-After opening the repository in a Codespace, you can run the following command to install the dependencies:
+After opening the repository in a Codespace, you can run the following command to install the dependencies from the `src` folder:
 
 ```bash
 pip install -r requirements.txt
 ```
 
 ## Running the script
-To run the script, you can use the following command:
+To run the script, you can use the following command from the `src` folder:
 
 ```bash
 python script.py
