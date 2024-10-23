@@ -1,42 +1,28 @@
 # Enterprise AI Development with GitHub Models and Azure
 This is the repository for the LinkedIn Learning course Enterprise AI Development with GitHub Models and Azure. The full course is available from [LinkedIn Learning][lil-course-url].
 
-## Getting started
-To get started with this repositor, open it using a GitHub Codespace. It has all the tools you need to start working with the data and GitHub Models.
+![lil-thumbnail-url]
 
-After opening the repository in a Codespace, you can run the following command to install the dependencies from the `src` folder:
+## Course Description
 
-```bash
-pip install -r requirements.txt
-```
+GitHub Models is a great place for developers to experiment with large language models (LLMs), especially if you’re an Azure developer who’s looking to test an idea or prototype an application. Integrating GitHub Models with Azure allows you to move logic back and forth as you work through each phase of a project. In this course, instructor Rob Bos shows you how to create prototypes and development paths in GitHub Models and then scale them for deployment in Azure. Along the way, gather insights to help you leverage the power of planning and practice, shifting your attention away from the more constrained options of GitHub Models to the more open and flexible features offered by Azure. This course is an ideal fit for Azure developers looking for a quick start guide to GitHub Models.
 
-## Running the script
-To run the script, you can use the following command from the `src` folder:
+## Instructions
+The code files used in this course are available in the 'models' branch of this repository.
 
-```bash
-python script.py
-```
+## Instructor
 
-## Local process
-To run the embedding and inference steps on you local machine, start here. This will show you the basic moving parts.
-The script will execute the following steps:
+Rami Krispin
 
-- Download and index the data: See [lab 1](/labs/Lab%201%20-%20Download%20and%20index%20the%20data.md)
-- Query the vector store: See [lab 2](/labs/Lab%202%20-%20Query%20the%20vector%20store.md)
+Senior Manager, Data Science and Engineering
 
-## Using Azure Resources
-Now that we have seen the moving parts, we can start leveling up and run this with Azure resources.
+                            
 
-- Use Azure Blob Storage to store the data: See [lab 3](/labs/Lab%203%20-%20Upload%20the%20data%20into%20blob%20storage.md)
-- Use Azure Cognitive Services to create embeddings: See [lab 4](/labs/Lab%204%20-%20Create%20embeddings%20with%20Azure%20OpenAI.md)
-- Use Azure Machine Learning to run the inference: See [lab 5](/labs/Lab%205%20-%20Query%20the%20Azure%20OpenAI%20model%20using%20Search.md)
+Check out my other courses on [LinkedIn Learning](https://www.linkedin.com/learning/instructors/rob-bos?u=104).
 
-### Running the scripts
-1. Look at the scripts for the documented parameters on the top
-1. Configure the necesary environment variables (also see `.env-example` that can be copied to `.env` and filled in)
-1. Run the download of the dependencies with `pip install -r requirements.txt`
-1. Run the scripts one by one with `python <script-name>.py`
 
-### Extra information
-All along the way, the most interesting durations for each step is shown to give you an idea of the performance of the script.
-At the end of the script, the used API requests to GitHub Models are printed, together with the information about the used tokens, as this is all dependent on the [rate limit for GitHub Models](https://docs.github.com/en/github-models/prototyping-with-ai-models#rate-limits).
+[0]: # (Replace these placeholder URLs with actual course URLs)
+
+[lil-course-url]: https://www.linkedin.com/learning/enterprise-ai-development-with-github-models-and-azure
+[lil-thumbnail-url]: https://media.licdn.com/dms/image/v2/D4D0DAQG3KaI6CRApdA/learning-public-crop_675_1200/learning-public-crop_675_1200/0/1729624135471?e=2147483647&v=beta&t=1eipMsNdl8_f6Y4L7IoFnlI-bLMil8n64zrnVAmIHq0
+
