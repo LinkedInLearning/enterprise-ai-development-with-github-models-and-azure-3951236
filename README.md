@@ -1,34 +1,28 @@
 # Enterprise AI Development with GitHub Models and Azure
 This is the repository for the LinkedIn Learning course Enterprise AI Development with GitHub Models and Azure. The full course is available from [LinkedIn Learning][lil-course-url].
 
-_See the readme file in the main branch for updated instructions and information._
+![lil-thumbnail-url]
+
+## Course Description
+
+GitHub Models is a great place for developers to experiment with large language models (LLMs), especially if you’re an Azure developer who’s looking to test an idea or prototype an application. Integrating GitHub Models with Azure allows you to move logic back and forth as you work through each phase of a project. In this course, instructor Rob Bos shows you how to create prototypes and development paths in GitHub Models and then scale them for deployment in Azure. Along the way, gather insights to help you leverage the power of planning and practice, shifting your attention away from the more constrained options of GitHub Models to the more open and flexible features offered by Azure. This course is an ideal fit for Azure developers looking for a quick start guide to GitHub Models.
+
 ## Instructions
-This repository has branches for each of the videos in the course. You can use the branch pop up menu in github to switch to a specific branch and take a look at the course at that stage, or you can add `/tree/BRANCH_NAME` to the URL to go to the branch you want to access.
+The code files used in this course are available in the 'models' branch of this repository.
 
-## Branches
-The branches are structured to correspond to the videos in the course. The naming convention is `CHAPTER#_MOVIE#`. As an example, the branch named `02_03` corresponds to the second chapter and the third video in that chapter. 
-Some branches will have a beginning and an end state. These are marked with the letters `b` for "beginning" and `e` for "end". The `b` branch contains the code as it is at the beginning of the movie. The `e` branch contains the code as it is at the end of the movie. The `main` branch holds the final state of the code when in the course.
+## Instructor
 
-When switching from one exercise files branch to the next after making changes to the files, you may get a message like this:
+Rami Krispin
 
-    error: Your local changes to the following files would be overwritten by checkout:        [files]
-    Please commit your changes or stash them before you switch branches.
-    Aborting
+Senior Manager, Data Science and Engineering
 
-To resolve this issue:
-	
-    Add changes to git using this command: git add .
-	Commit changes using this command: git commit -m "some message"
+                            
 
-## Installing
-1. To use these exercise files, you must have the following installed:
-	- [list of requirements for course]
-2. Clone this repository into your local machine using the terminal (Mac), CMD (Windows), or a GUI tool like SourceTree.
-3. [Course-specific instructions]
+Check out my other courses on [LinkedIn Learning](https://www.linkedin.com/learning/instructors/rob-bos?u=104).
 
 
 [0]: # (Replace these placeholder URLs with actual course URLs)
 
-[lil-course-url]: https://www.linkedin.com/learning/
-[lil-thumbnail-url]: http://
+[lil-course-url]: https://www.linkedin.com/learning/enterprise-ai-development-with-github-models-and-azure
+[lil-thumbnail-url]: https://media.licdn.com/dms/image/v2/D4D0DAQG3KaI6CRApdA/learning-public-crop_675_1200/learning-public-crop_675_1200/0/1729624135471?e=2147483647&v=beta&t=1eipMsNdl8_f6Y4L7IoFnlI-bLMil8n64zrnVAmIHq0
 
